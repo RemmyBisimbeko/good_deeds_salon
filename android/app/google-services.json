@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "596775451407",
+    "project_id": "gooddeedssalon",
+    "storage_bucket": "gooddeedssalon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596775451407:android:c66ac43ba73f16c273dc7a",
+        "android_client_info": {
+          "package_name": "com.example.good_deeds_salon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3sQ_EKp92av1wuGQBuaXhXNCdULmFuhc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

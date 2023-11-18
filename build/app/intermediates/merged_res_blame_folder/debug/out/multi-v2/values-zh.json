@@ -4,7 +4,7 @@
             "outputFile": "com.example.good_deeds_salon.app-mergeDebugResources-38:/values-zh/values-zh.xml",
             "map": [
                 {
-                    "source": "/Users/remmy/.gradle/caches/transforms-3/504f4fc810ee788bc10969b55b446e05/transformed/jetified-ucrop-2.2.8/res/values-zh/values-zh.xml",
+                    "source": "/Users/remmy/.gradle/caches/transforms-3/bcf6b68ab073e6da421a7ef75b4d94c2/transformed/jetified-ucrop-2.2.8/res/values-zh/values-zh.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

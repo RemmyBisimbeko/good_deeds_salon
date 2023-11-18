@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.example.good_deeds_salon.app-merged_res-40:/drawable_launch_background.xml.flat",
-        "source": "com.example.good_deeds_salon.app-main-34:/drawable/launch_background.xml"
-    },
-    {
         "merged": "com.example.good_deeds_salon.app-merged_res-40:/drawable-v21_launch_background.xml.flat",
         "source": "com.example.good_deeds_salon.app-main-34:/drawable-v21/launch_background.xml"
     },

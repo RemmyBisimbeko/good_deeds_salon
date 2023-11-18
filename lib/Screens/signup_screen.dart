@@ -111,7 +111,7 @@ class _SignupState extends State<SignupScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Icon(
-                  Icons.pest_control_rodent,
+                  Icons.person_2_outlined,
                   size: 60,
                 ),
                 const SizedBox(
@@ -120,7 +120,7 @@ class _SignupState extends State<SignupScreen> {
 
                 // Greeting
                 const Text(
-                  'Tusinike',
+                  'Good Deeds',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35),
                 ),
                 const Text(
@@ -132,7 +132,7 @@ class _SignupState extends State<SignupScreen> {
                 ),
                 // Email Text Field
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 200),
                   child: TextField(
                     controller: emailController,
                     decoration: InputDecoration(
@@ -155,7 +155,7 @@ class _SignupState extends State<SignupScreen> {
                 ),
                 // Username Text Field
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 200),
                   child: TextField(
                     controller: usernameController,
                     decoration: InputDecoration(
@@ -179,7 +179,7 @@ class _SignupState extends State<SignupScreen> {
 
                 // Password Text Field
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 200),
                   child: TextField(
                     controller: passwordController,
                     obscureText: true,
@@ -204,7 +204,7 @@ class _SignupState extends State<SignupScreen> {
 
                 // Confirm Password Text Field
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 200),
                   child: TextField(
                     controller: confirmpasswordController,
                     obscureText: true,
@@ -229,7 +229,7 @@ class _SignupState extends State<SignupScreen> {
 
                 // Sign up Button
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 200),
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.deepPurple,
@@ -254,7 +254,7 @@ class _SignupState extends State<SignupScreen> {
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 40.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 200),
                   child: Row(
                     children: [
                       Expanded(
@@ -264,7 +264,7 @@ class _SignupState extends State<SignupScreen> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                        padding: const EdgeInsets.symmetric(horizontal: 200.0),
                         child: Text('OR'),
                       ),
                       Expanded(
@@ -282,7 +282,7 @@ class _SignupState extends State<SignupScreen> {
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 200),
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.deepPurple[300],
@@ -296,7 +296,7 @@ class _SignupState extends State<SignupScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Image.asset(
-                          'lib/memes/google.png',
+                          'assets/google.png',
                           width: 40.0,
                           height: 40.0,
                           // color: Colors.deepPurple,

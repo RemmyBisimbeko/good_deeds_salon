@@ -63,7 +63,7 @@ class ForgotpasswordState extends State<ForgotpasswordScreen> {
           ),
 
           const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 25.0),
+            padding: EdgeInsets.symmetric(horizontal: 200),
             child: Text(
               'Enter your email and we send you a password reset link',
               textAlign: TextAlign.center,
@@ -76,7 +76,7 @@ class ForgotpasswordState extends State<ForgotpasswordScreen> {
           ),
           // Email text Field
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            padding: const EdgeInsets.symmetric(horizontal: 200),
             child: TextField(
               controller: emailController,
               decoration: InputDecoration(
@@ -102,7 +102,7 @@ class ForgotpasswordState extends State<ForgotpasswordScreen> {
           // MaterialButton(
           //   onPressed: () {},
           //   color: Colors.deepPurple,
-          //   padding: const EdgeInsets.symmetric(horizontal: 25.0),
+          //   padding: const EdgeInsets.symmetric(horizontal: 200),
           //   child: Text(
           //     'Rest Password',
           //     style:
@@ -112,7 +112,7 @@ class ForgotpasswordState extends State<ForgotpasswordScreen> {
 
           // Login Button
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            padding: const EdgeInsets.symmetric(horizontal: 200),
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.deepPurple,

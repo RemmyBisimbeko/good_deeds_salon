@@ -53,10 +53,52 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.white,
         elevation: 1,
       ),
-      body: Center(
-        child: const Text(
-          'Home Screen',
-          style: TextStyle(fontSize: 50),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Container(
+              // color: Colors.purple[200],
+              width: 100,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 10.0),
+                child: Column(children: [
+                  Icon(Icons.home_outlined),
+                  Text('Home'),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Icon(Icons.dashboard_outlined),
+                  Text('Dashboard'),
+                  SizedBox(
+                    height: 550,
+                  ),
+                  Divider(
+                    color: Colors.deepPurple,
+                    thickness: 0.5, // Adjust the thickness as needed
+                  ),
+                  Icon(Icons.logout_outlined),
+                  Text('Log Out'),
+                ]),
+              ),
+            ),
+            VerticalDivider(), // Divider between sections
+            Expanded(
+              child: Center(
+                child: const Text(
+                  'Home Screen',
+                  style: TextStyle(fontSize: 50),
+                ),
+              ),
+            ),
+            VerticalDivider(), // Divider between sections
+            Container(
+              color: Colors.amber[200],
+              width: 300,
+              child: Text('Process Order Pane'),
+            ),
+          ],
         ),
       ),
     );

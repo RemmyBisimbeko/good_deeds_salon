@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:good_deeds_salon/Screens/home_screen.dart';
+import 'package:good_deeds_salon/Screens/login_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Good Deeds Salon',
-      home: HomeScreen(),
+      home: LoginScreen(revealSignupScreen: () {  },),
       debugShowCheckedModeBanner: false,
     );
   }

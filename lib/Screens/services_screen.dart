@@ -1,18 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:good_deeds_salon/Screens/profiles_screen.dart';
-// // // import 'dart:io';
 
 class ServicesScreen extends StatefulWidget {
   const ServicesScreen({super.key});
 
   @override
   State<ServicesScreen> createState() => _ServicesScreenState();
-}
-
-@override
-void initState() {
-  // super.initState();
 }
 
 class _ServicesScreenState extends State<ServicesScreen> {
@@ -64,7 +58,7 @@ class _ServicesScreenState extends State<ServicesScreen> {
                   double screenWidth = MediaQuery.of(context).size.width;
 
                   // Check if the app is running on the web platform
-                  if (screenWidth > 415) {
+                  if (screenWidth < 415) {
                     // Apply different padding for web
                     horizontalPaddingValue = 450.0;
                   } else if (screenWidth > 415) {

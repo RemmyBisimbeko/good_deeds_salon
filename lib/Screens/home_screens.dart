@@ -88,12 +88,12 @@ class _HomeScreenState extends State<HomeScreen> {
             const VerticalDivider(), // Divider between sections
             const Expanded(
               child: Center(
-                  // child: const Text(
-                  //   'Home Screen',
-                  //   style: TextStyle(fontSize: 50),
-                  // ),
-                  // child: ServicesScreen()
-                  ),
+                // child: const Text(
+                //   'Home Screen',
+                //   style: TextStyle(fontSize: 50),
+                // ),
+                child: ServicesScreen(),
+              ),
             ),
             const VerticalDivider(), // Divider between sections
 

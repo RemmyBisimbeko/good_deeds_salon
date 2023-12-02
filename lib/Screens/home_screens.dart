@@ -1,4 +1,6 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:good_deeds_salon/Screens/profiles_screen.dart';
 import 'package:good_deeds_salon/Screens/services_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -27,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 context,
                 MaterialPageRoute(
                   builder: (builder) {
-                    return ServicesScreen(
+                    return const ProfileScreen(
                       current_username: '',
                     );
                   },
@@ -43,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 context,
                 MaterialPageRoute(
                   builder: (builder) {
-                    return ServicesScreen(current_username: 'current_username');
+                    return const ServicesScreen();
                   },
                 ),
               );
@@ -61,8 +63,8 @@ class _HomeScreenState extends State<HomeScreen> {
             Container(
               // color: Colors.purple[200],
               width: 100,
-              child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 10.0),
+              child: const Padding(
+                padding: EdgeInsets.symmetric(vertical: 10.0),
                 child: Column(children: [
                   Icon(Icons.home_outlined),
                   Text('Home'),
@@ -76,27 +78,49 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   Divider(
                     color: Colors.deepPurple,
-                    thickness: 0.5, // Adjust the thickness as needed
+                    thickness: 0.2, // Adjust the thickness as needed
                   ),
                   Icon(Icons.logout_outlined),
                   Text('Log Out'),
                 ]),
               ),
             ),
-            VerticalDivider(), // Divider between sections
-            Expanded(
+            const VerticalDivider(), // Divider between sections
+            const Expanded(
               child: Center(
-                child: const Text(
-                  'Home Screen',
-                  style: TextStyle(fontSize: 50),
-                ),
-              ),
+                  // child: const Text(
+                  //   'Home Screen',
+                  //   style: TextStyle(fontSize: 50),
+                  // ),
+                  // child: ServicesScreen()
+                  ),
             ),
-            VerticalDivider(), // Divider between sections
+            const VerticalDivider(), // Divider between sections
+
             Container(
-              color: Colors.amber[200],
+              color: Colors.purple[200],
               width: 300,
-              child: Text('Process Order Pane'),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text(
+                    'Your Order',
+                    style: TextStyle(fontSize: 40),
+                  ),
+                  const Text(
+                    'Sub Total',
+                    style:
+                        TextStyle(fontWeight: FontWeight.normal, fontSize: 20),
+                  ),
+                  // List.builder(),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text(
+                      'Check out',
+                    ),
+                  )
+                ],
+              ),
             ),
           ],
         ),

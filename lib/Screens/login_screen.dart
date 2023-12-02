@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:good_deeds_salon/Screens/forgotpassword_screen.dart';
-import 'package:good_deeds_salon/Screens/services_screen.dart';
+import 'package:good_deeds_salon/Screens/profiles_screen.dart';
 import 'package:good_deeds_salon/services/auth_service.dart';
 
 class LoginScreen extends StatefulWidget {

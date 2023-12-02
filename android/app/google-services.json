@@ -12,7 +12,12 @@
           "package_name": "com.example.good_deeds_salon"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "596775451407-5nrt5hk3ne69f2icmvfps45k7roliekj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyA3sQ_EKp92av1wuGQBuaXhXNCdULmFuhc"
@@ -20,7 +25,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596775451407-5nrt5hk3ne69f2icmvfps45k7roliekj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "596775451407-dg3mpsr1d9r71ncb5emal3rhisd6imit.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.goodDeedsSalon"
+              }
+            }
+          ]
         }
       }
     }

@@ -74,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Icon(Icons.dashboard_outlined),
                   Text('Dashboard'),
                   SizedBox(
-                    height: 550,
+                    height: 540,
                   ),
                   Divider(
                     color: Colors.deepPurple,

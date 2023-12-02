@@ -70,6 +70,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '596775451407',
     projectId: 'gooddeedssalon',
     storageBucket: 'gooddeedssalon.appspot.com',
+    iosClientId: '596775451407-dg3mpsr1d9r71ncb5emal3rhisd6imit.apps.googleusercontent.com',
     iosBundleId: 'com.example.goodDeedsSalon',
   );
 }

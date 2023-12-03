@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:good_deeds_salon/Screens/orders_screen.dart';
 import 'package:good_deeds_salon/Screens/profiles_screen.dart';
 import 'package:good_deeds_salon/Screens/services_screen.dart';
 
@@ -98,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
             const VerticalDivider(), // Divider between sections
 
             Container(
-              color: Colors.purple[200],
+              color: Colors.grey[200],
               width: 300,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -106,6 +107,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   const Text(
                     'Your Order',
                     style: TextStyle(fontSize: 40),
+                  ),
+                  const Expanded(
+                    child: Center(
+                      child: OrdersScreen(),
+                    ),
                   ),
                   const Text(
                     'Sub Total',

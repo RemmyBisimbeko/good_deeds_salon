@@ -45,8 +45,10 @@ class _ServicesScreenState extends State<ServicesScreen> {
               }
 
               // If you reach this point, you have data to display
-              return ListView.builder(
+              return GridView.builder(
                 itemCount: snapshot.data!.docs.length,
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2, childAspectRatio: 1 / 1.4),
                 itemBuilder: (context, index) {
                   var document = snapshot.data!.docs[index];
                   // Access document data using document.data()

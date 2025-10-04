@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.add),
+            icon: const Icon(Icons.person_outline),
             color: Colors.black,
             onPressed: () {
               Navigator.push(
@@ -38,20 +38,6 @@ class _HomeScreenState extends State<HomeScreen> {
               );
             },
           ),
-          IconButton(
-            icon: const Icon(Icons.person_outline),
-            color: Colors.black,
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (builder) {
-                    return const ServicesScreen();
-                  },
-                ),
-              );
-            },
-          )
         ],
         backgroundColor: Colors.white,
         elevation: 1,

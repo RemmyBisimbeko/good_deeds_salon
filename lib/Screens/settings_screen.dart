@@ -9,7 +9,7 @@ class SettingsScreen extends StatefulWidget {
 
   @override
   State<SettingsScreen> createState() => _SettingsScreenState();
-}
+} 
 
 class _SettingsScreenState extends State<SettingsScreen> {
   final userData = FirebaseAuth.instance.currentUser!;
@@ -142,7 +142,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   borderRadius: BorderRadius.circular(100),
                 ),
                 child: Image.asset(
-                  'lib/memes/profile.png',
+                  'assets/profile.png',
                   width: 150,
                 ),
               ),

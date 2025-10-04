@@ -76,7 +76,7 @@ class _OrdersScreenState extends State<OrdersScreen> {
                     child: Container(
                         // width: 400,
                         decoration: BoxDecoration(
-                            color: Colors.grey,
+                            color: Colors.grey[300],
                             borderRadius: BorderRadius.circular(12)),
                         child: Padding(
                           padding: const EdgeInsets.all(15.0),

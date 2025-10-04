@@ -7,7 +7,6 @@ import 'package:good_deeds_salon/Screens/login_screen.dart';
 import 'package:good_deeds_salon/Screens/settings_screen.dart';
 import 'package:share_plus/share_plus.dart';
 
-
 // void main() => runApp(ServicesScreen());
 
 class ProfileScreen extends StatefulWidget {
@@ -92,16 +91,6 @@ class ProfileState extends State<ProfileScreen> {
               PopupMenuItem(
                 child: ListTile(
                   leading: Icon(
-                    Icons.campaign_outlined,
-                    color: Colors.black,
-                  ),
-                  title: Text('Invite a friend'),
-                ),
-                value: 'Invite',
-              ),
-              PopupMenuItem(
-                child: ListTile(
-                  leading: Icon(
                     Icons.logout_outlined,
                     color: Colors.black,
                   ),
@@ -114,15 +103,10 @@ class ProfileState extends State<ProfileScreen> {
               if (value == 'Settings') {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                      builder: (context) => SettingsScreen()),
+                  MaterialPageRoute(builder: (context) => SettingsScreen()),
                 );
               } else if (value == 'Log Out') {
                 signOut();
-              } else if (value == 'Invite') {
-                Share.share(
-                    'Check out this hilarious App https://play.google.com/store/apps/details?id=com.infoholiks.tusinikeApp',
-                    subject: 'Let \'s Laugh 😂!');
               }
             },
           ),
